@@ -107,3 +107,57 @@ int main()
 {
  
 }
+//8. You are given an integer N. Find the sum
+#include<iostream>
+using namespace std;
+int main()
+{
+    int N;
+    cin >> N;
+
+    long long i = 1, sum = 0;
+    while (i <= N)
+    {
+        sum += i;
+        i++;
+    }
+    cout << sum <<endl;
+}
+// 9. You are given an integer N
+// Find the factorial of N
+//  by writing a function that takes N
+//  as a parameter and returns N!#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    long long fact = 1;
+    while (n != 0)
+    {
+        fact = fact * n;
+        n = n - 1;
+    }
+    cout << fact << endl;
+}
+//10. 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int x, n;
+    cin >> n >> x;
+
+    long long result = 1;
+
+    // Loop runs n times, multiplying result by x each time
+    while (n > 0)
+    {
+        result = result * x; // Accumulate the multiplication
+        n = n - 1;           // Count down n
+    }
+    cout << result << endl;
+}
