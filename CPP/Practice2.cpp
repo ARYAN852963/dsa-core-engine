@@ -94,3 +94,16 @@ int main()
     }
     
 }
+//7.You are given an integer N
+//followed by N
+//integers. Count how many of the given numbers are:
+//Positive
+//Negative
+//Even
+//Odd
+#include <iostream>
+using namespace std;
+int main()
+{
+ 
+}
