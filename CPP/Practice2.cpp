@@ -161,3 +161,46 @@ int main()
     }
     cout << result << endl;
 }
+// 11.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    long long sum = 0;
+
+    while (n != 0)
+    {
+        sum = (sum * 10) + n % 10; 
+        n = n / 10;           
+    }
+    cout << sum << endl;
+}
+// 12.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    long long sum = 0;
+    long long og_n = n;
+
+    while (n != 0)
+    {
+        sum = (sum * 10) + n % 10; 
+        n = n / 10;           
+    }
+    cout << sum << endl;
+    if (sum == og_n)
+    {
+        cout << "Yes" << endl;
+    }
+    
+}
+
